@@ -12,8 +12,8 @@
 </head>
 <body>
   <div class="nav above-hero">
-    <a class="logo"></a>
-    <a class="contact">CONTACT</a>
+    <a class="logo" href=".."></a>
+    <a class="contact" href="mailto:team@onpairwise.com">CONTACT</a>
   </div>
   <div class="hero">
     <div class="at-hero">
@@ -24,6 +24,7 @@
       <div class="spacer-3"></div>
       <a class="button" onclick="$('html, body').animate({scrollTop: $('.below-hero').offset().top}, 500, 'swing');">LEARN MORE</a>
     </div>
+    <img class="hero-graphic" src="hero.png">
   </div>
   <div class="container blue">
     <div class="below-hero">
@@ -56,7 +57,7 @@
   </div>
   <div class="container gray">
     <div class="spacer-5"></div>
-    <h1>Our process is flexible and intuitive.</h1>
+    <h1>A system designed to be fast and intuitive.</h1>
     <div class="spacer-2"></div>
     <div class="step">
       <img class="step-graphic" src="distribute.svg">
@@ -78,14 +79,14 @@
     <div class="spacer-5"></div>
     <h1>Can Pairwise help you?</h1>
     <div class="spacer-2"></div>
-    <a class="button">CONTACT US</a>
+    <a class="button" href="mailto:team@onpairwise.com">CONTACT US</a>
     <div class="spacer-5"></div>
   </div>
   <script>
     $('.numbers').on('inview', function(event, isInView) {
-      $('.accuracy').animateNumber({ number: 99 }, 1000);
-      $('.hours').animateNumber({ number: 100 }, 1000);
-      $('.candidates').animateNumber({ number: 1000 }, 1000);
+      $('.accuracy').animateNumber({number: 99}, 1000);
+      $('.hours').animateNumber({number: 100}, 1000);
+      $('.candidates').animateNumber({number: 1000}, 1000);
       $('.numbers').off('inview');
     });
   </script>
